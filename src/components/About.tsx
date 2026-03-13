@@ -68,7 +68,7 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
             A passionate AI enthusiast with a strong foundation in machine learning, 
-            natural language processing, and computer vision.
+            natural language processing, & computer vision.
           </p>
         </motion.div>
 
