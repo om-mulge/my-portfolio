@@ -2,9 +2,10 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, Mail, Phone, Linkedin, MapPin, Sparkles, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profileImage from "@/assets/profile.jpg";
-import { useRef } from "react";
+import { useRef, Suspense } from "react";
 import WaveText from "./WaveText";
 import RippleEffect from "./RippleButton";
+import ProfileOrb from "./ProfileOrb";
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const {
@@ -173,41 +174,24 @@ const Hero = () => {
           delay: 0.3,
           ease: "easeOut"
         }} className="flex flex-col items-center gap-6 order-1 lg:order-2">
-            {/* Profile image */}
-            <div className="relative">
-              <motion.div className="absolute inset-0 rounded-full" style={{
-              background: "conic-gradient(from 0deg, hsl(160 84% 45% / 0.4), hsl(160 84% 60% / 0.1), hsl(160 84% 45% / 0.4))",
-              padding: "3px"
-            }} animate={{
-              rotate: 360
-            }} transition={{
-              duration: 25,
-              repeat: Infinity,
-              ease: "linear"
-            }}>
-                <div className="w-full h-full bg-background rounded-full" />
-              </motion.div>
+            <div className="relative flex items-center justify-center">
+              {/* 3D Orb with stars - centered on image */}
+              <div className="absolute w-[calc(100%+120px)] h-[calc(100%+120px)] md:w-[calc(100%+140px)] md:h-[calc(100%+140px)] lg:w-[calc(100%+160px)] lg:h-[calc(100%+160px)]">
+                <Suspense fallback={null}>
+                  <ProfileOrb />
+                </Suspense>
+              </div>
 
+              {/* Pulsing glow behind image */}
               <motion.div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-40 scale-125"
- animate={{
-              opacity: [0.2, 0.4, 0.2]
-            }} transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }} />
+                animate={{ opacity: [0.15, 0.4, 0.15] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              />
               
-              <motion.div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 
-rounded-full overflow-hidden 
-border-2 border-primary/30 
-shadow-2xl shadow-primary/20"
- animate={{
-              y: [0, -6, 0]
-            }} transition={{
-              duration: 6,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}>
+              <motion.div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-primary/30 shadow-2xl shadow-primary/20 z-10"
+                animate={{ y: [0, -6, 0] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              >
                 <img src={profileImage} alt="Om Mulge - AI & Machine Learning Engineer" className="w-full h-full object-cover object-top" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
               </motion.div>
