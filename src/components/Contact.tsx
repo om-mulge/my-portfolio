@@ -62,11 +62,11 @@ const itemVariants = {
 const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-card relative overflow-hidden">
-      {/* Background elements */}
+      {/* Background elements... */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       
-      {/* Grid pattern */}
+      {/* Grid pattern... */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]" />
 
       <div className="container px-6 relative z-10">

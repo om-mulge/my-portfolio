@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Code2, Database, Smartphone, Wrench, Users, Brain, Zap, Target, Sparkles } from "lucide-react";
-
+// hii
 const technicalSkills = [
   {
     category: "Languages",
