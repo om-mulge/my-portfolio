@@ -27,7 +27,7 @@ const GlowingCore = () => {
 
   return (
     <Float speed={1.2} floatIntensity={0.6}>
-      {/* Outer halo... */}
+      {/* Outer halo */}
       <mesh ref={outerRef}>
         <sphereGeometry args={[0.75, 64, 64]} />
         <meshStandardMaterial
