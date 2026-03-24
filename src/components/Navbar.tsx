@@ -47,7 +47,7 @@ const Navbar = () => {
           </Button>
         </div>
 
-        {/* Mobile Menu Toggle */}
+        {/* Mobile Menu Toggle...*/}
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-muted-foreground hover:text-primary">
           {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
