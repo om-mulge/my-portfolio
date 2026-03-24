@@ -149,7 +149,7 @@ const About = () => {
             </div>
           </motion.div>
 
-          {/* Certifications */}
+          {/* Certifications...*/}
           <motion.div
             variants={containerVariants}
             initial="hidden"
