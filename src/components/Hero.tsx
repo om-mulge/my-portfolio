@@ -182,7 +182,7 @@ const Hero = () => {
                 </Suspense>
               </div>
 
-              {/* Pulsing glow behind image */}
+              {/* Pulsing glow behind image... */}
               <motion.div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-40 scale-125"
                 animate={{ opacity: [0.15, 0.4, 0.15] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
