@@ -5,7 +5,7 @@ const technicalSkills = [
   {
     category: "Languages",
     icon: Code2,
-    items: ["Python", "C++ with DSA", "SQL"],
+    items: ["Python", "C++ with DSA", "JavaScript", "TypeScript", "HTML", "CSS"],
     color: "text-primary",
     bgColor: "bg-primary/10",
     borderColor: "border-primary/30",
@@ -13,7 +13,7 @@ const technicalSkills = [
   {
     category: "Databases",
     icon: Database,
-    items: ["MySQL", "MongoDB"],
+    items: ["PostgreSQL","MySQL", "MongoDB"],
     color: "text-accent",
     bgColor: "bg-accent/10",
     borderColor: "border-accent/30",
@@ -46,8 +46,7 @@ const softSkills = [
 const interests = [
   "AI & Chatbot Development",
   "NLP",
-  "Deep Learning",
-  "Computer Vision",
+  "Machine Learning",
   "App & Web Development",
   "Competitive Programming",
 ];

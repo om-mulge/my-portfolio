@@ -14,7 +14,7 @@ const experience = [
 
 
 const education = [
-  { program: "B.E (AI & ML)", institute: "Bangalore Technological Institute", year: "2026", score: "8.79 CGPA" },
+  { program: "B.E (AI & ML)", institute: "Bangalore Technological Institute", year: "2026", score: "8.92 CGPA" },
   { program: "12th PUC", institute: "Sankalp Independent PU College", year: "2022", score: "73%" },
   { program: "10th SSLC", institute: "Shri Basaveshwar EM & HS", year: "2020", score: "88.96%" },
 ];
@@ -67,8 +67,7 @@ const About = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A passionate AI enthusiast with a strong foundation in machine learning, 
-            natural language processing, & computer vision.
+            An AI & ML graduate and Software Developer with hands-on experience in developing full-stack web applications and AI-powered solutions. Skilled in React, JavaScript, Machine Learning, NLP, and Computer Vision, with a passion for creating innovative, user-centric products.
           </p>
         </motion.div>
 

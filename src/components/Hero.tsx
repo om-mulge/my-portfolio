@@ -100,8 +100,7 @@ const Hero = () => {
             </motion.div>
 
             <motion.p variants={itemVariants} className="text-base md:text-lg text-muted-foreground/80 mb-10 leading-relaxed max-w-xl">
-              Final-year B.E student passionate about building intelligent systems, 
-              exploring real-world AI applications, and creating innovative solutions with NLP and Computer Vision.
+              B.E. graduate in Artificial Intelligence and Machine Learning passionate about building intelligent systems, exploring real-world AI applications, and creating innovative solutions using NLP, Computer Vision, and Generative AI.
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 mb-10">
